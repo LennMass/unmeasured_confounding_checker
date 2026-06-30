@@ -10,7 +10,7 @@ def get_sklearn_learners() -> tuple:
 
 
 def get_xgboost_learners() -> tuple:
-    from xgboost import XGBRegressor, XGBClassifier
+    from xgboost import XGBRegressor, XGBClassifier # heavy import, therefore lazy call
     ml_l = XGBRegressor(n_estimators=100, max_depth=5, learning_rate=0.1, verbosity=0)
     ml_m = XGBClassifier(n_estimators=100, max_depth=5, learning_rate=0.1, verbosity=0, eval_metric="logloss")
     return ml_l, ml_m
