@@ -49,7 +49,7 @@ def estimate(
 def _log_to_mlflow(result: CausalEstimate, data: PreparedData) -> None:
     try:
         import mlflow
-        mlflow.set_experiment("causal-sensitivity")
+        mlflow.set_experiment("unmeasured_confounding_checker")
         with mlflow.start_run():
             mlflow.log_param("estimator", result.estimator)
             mlflow.log_param("learner", result.learner)
