@@ -1,7 +1,5 @@
 # Sensitivity to Unmeasured Confounding in ATE estimation
 
-**Robustness Analysis as a Service**
-
 Estimate an average treatment effect with DoubleML, then automatically probe
 how robust that estimate is: how strong an unmeasured confounder would need
 to be to explain it away (E-value), whether the effect survives placebo
@@ -39,7 +37,7 @@ confounders. You get back:
 ```
 
 The sensitivity engine is plain Python (`src/core/`), so you can use it as a
-library, behind the API, or from notebooks — independent of the web layer.
+library, behind the API, or from notebooks (independent of the web layer).
 
 ---
 
@@ -87,7 +85,7 @@ Learner check:  sklearn = 280.7,  xgboost = 271.4   (stable)
 ```
 
 Both learners agree, the placebo distribution is centered near zero, and the
-real effect sits in the extreme tail — all signs of a robust result.
+real effect sits in the extreme tail.
 
 ---
 
