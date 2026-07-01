@@ -60,6 +60,9 @@ make mlflow       # on :5001
 Open the dashboard at http://localhost:8501, upload `data/sample_data.csv`,
 and click **Run Analysis**.
 
+![Alt text](/screenshot_streamlit_app.png "Example of Streamlit Dashboard.")
+
+
 ---
 
 ## Quickstart (Docker)
